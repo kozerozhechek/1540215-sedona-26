@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+
+    <!-- Хедер -->
+    <header class="page-header">
+      <a class="logo">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
+      </a>
+      <nav class="page-nav">
+        <button class="page-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="page-nav__item page-nav__item--current">
+              <a>
+                Фото и видео
+              </a>
+            </li>
+          </ul>
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="page-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Основное содержание страницы -->
+    <main class="main-container">
+
+      <!-- Баннер -->
+      <div class="catalog-hero">
+        <img class="catalog-hero__image" src="img/hero-title2.svg" alt="Седона" width="229" height="39">
+      </div>
+
+      <!-- Хедер для содержательной части -->
+      <header class="main-header">
+        <h1 class="main-header__title">Фото и видео</h1>
+        <p class="main-header__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </header>
+
+      <!-- Фотографии -->
+      <section class="photos">
+        <div class="photos__wrapper">
+          <h2 class="visually-hidden">Фотографии</h2>
+          <ul class="photos__list">
+            <li class="photos__item photo photos__item--special">
+              <img class="photo__image" src="img/photo-1-mobile.jpg" alt="Дорога на закате" width="280" height="280">
+              <div class="photo__info">
+                <h3 class="photo__title">
+                  Неродные просторы
+                </h3>
+                <p class="photo__author">
+                  Автор фото: Борис
+                </p>
+                <div class="photo__reactions likes">
+                  <button class="likes__button" type="button">
+                    <span class="visually-hidden">Количество лайков у снимка</span>
+                    <span class="likes__number">1350</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="photos__item photo">
+              <img class="photo__image" src="img/photo-2-mobile.jpg" alt="Кактус" width="280" height="280">
+              <div class="photo__info">
+                <h3 class="photo__title">
+                  Местная растительность
+                </h3>
+                <p class="photo__author">
+                  Автор фото: Сергей
+                </p>
+                <div class="photo__reactions likes">
+                  <button class="likes__button" type="button">
+                    <span class="visually-hidden">Количество лайков у снимка</span>
+                    <span class="likes__number">143</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="photos__item photo">
+              <img class="photo__image" src="img/photo-3-mobile.jpg" alt="Горная дорога" width="280" height="280">
+              <div class="photo__info">
+                <h3 class="photo__title">
+                  Дорога на север
+                </h3>
+                <p class="photo__author">
+                  Автор фото: Петр
+                </p>
+                <div class="photo__reactions likes">
+                  <button class="likes__button" type="button">
+                    <span class="visually-hidden">Количество лайков у снимка</span>
+                    <span class="likes__number">96</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="photos__item photo">
+              <img class="photo__image" src="img/photo-4-mobile.jpg" alt="Горный перешеек" width="280" height="280">
+              <div class="photo__info">
+                <h3 class="photo__title">
+                  Мост дьявола
+                </h3>
+                <p class="photo__author">
+                  Автор фото: Антон
+                </p>
+                <div class="photo__reactions likes">
+                  <button class="likes__button" type="button">
+                    <span class="visually-hidden">Количество лайков у снимка</span>
+                    <span class="likes__number">254</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Видео -->
+      <section class="video">
+        <div class="video__wrapper">
+          <header class="video__header">
+            <h2 class="visually-hidden">Видео</h2>
+            <p class="video__title">Все еще сомневаетесь?</p>
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </header>
+          <video class="video__clip" src="#" controls poster="img/video-mobile.jpg" preload="none" width="280" height="177">
+          </video>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Кнопка для включения видео</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__hashtag hashtag" href="#">
+          #visitsedona
+        </a>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы во Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtupe" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Ссылка на HTML-Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
