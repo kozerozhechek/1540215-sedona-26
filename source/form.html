@@ -5,35 +5,36 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
+
+    <!-- Хедер -->
+    <header class="page-header">
       <a class="logo">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="page-nav">
+        <button class="page-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
               <a>
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
-              <a href="photo.html">
+            <li class="page-nav__item">
+              <a href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="main-nav__item">
-              <!-- Заглушка под логотип -->
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">
+          </ul>
+          <ul class="page-nav__list">
+            <li class="page-nav__item page-nav__item--current">
+              <a>
                 Форма отзыва
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="page-nav__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">
                 HTML Academy
               </a>
@@ -42,20 +43,23 @@
         </div>
       </nav>
     </header>
+
+    <!-- Основное содержание страницы -->
     <main class="main-container">
-      <h1 class="visually-hidden">Страница с формой отзыва</h1>
+      <!-- Баннер -->
       <div class="photo-hero">
-        <img class="photo-hero__image" src="img/SEDONA.svg" alt="Sedona" width="229" height="39">
+        <img class="photo-hero__image" src="img/hero-title2.svg" alt="Sedona" width="229" height="39">
       </div>
+
+      <!-- Хедер для содержательной части -->
+      <header class="main-header">
+        <h1 class="main-header__title">Оставьте свой отзыв</h1>
+        <p class="main-header__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+
+      <!-- Форма -->
       <section class="review">
-        <header class="review__header">
-          <h2 class="review__title">
-            Оставьте свой отзыв
-          </h2>
-          <p class="review__intro">
-            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-          </p>
-        </header>
+        <h2 class="visually-hidden">Форма для отзыва</h2>
         <form class="review__form review-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="review-form__group">
             <legend class="review-form__title">
@@ -86,18 +90,18 @@
             <legend class="review-form__title">
               Контактная информация:
             </legend>
-            <ul class="review-form__list review-form__personal-contacts">
+            <ul class="review-form__list review-form__personal-info">
               <li class="review-form__item">
                 <label class="review-form__caption review-caption" for="personal-telephone">
                   Контактный телефон*:
                 </label>
-                <input class="review-form__field review-form__field--with-icon review-form__field--tel" type="tel" id="personal-telephone" name="personal-telephone" placeholder="Введите телефон" required>
+                <input class="review-form__field review-form__field--icon review-form__field--tel" type="tel" id="personal-telephone" name="personal-telephone" placeholder="Введите телефон" required>
               </li>
               <li class="review-form__item">
                 <label class="review-form__caption review-caption" for="personal-email">
                   Электронная почта*:
                 </label>
-                <input class="review-form__field review-form__field--with-icon review-form__field--email" type="email" id="personal-email" name="personal-email" placeholder="Введите e-mail" required>
+                <input class="review-form__field review-form__field--icon review-form__field--email" type="email" id="personal-email" name="personal-email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
@@ -175,6 +179,8 @@
         </form>
       </section>
     </main>
+
+    <!-- Футер -->
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__hashtag hashtag" href="#">
@@ -207,11 +213,3 @@
     </footer>
   </body>
 </html>
-
-
-
-
-
-
-
-

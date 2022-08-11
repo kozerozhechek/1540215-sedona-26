@@ -5,35 +5,36 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
+
+    <!-- Хедер -->
+    <header class="page-header">
       <a class="logo">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="page-nav">
+        <button class="page-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a>
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
+              <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
-              <a href="photo.html">
+            <li class="page-nav__item page-nav__item--current">
+              <a>
                 Фото и видео
               </a>
             </li>
-            <li class="main-nav__item">
-              <!-- Заглушка под логотип -->
-            </li>
-            <li class="main-nav__item">
+          </ul>
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
               <a href="form.html">
                 Форма отзыва
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="page-nav__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">
                 HTML Academy
               </a>
@@ -43,18 +44,24 @@
       </nav>
     </header>
 
+    <!-- Основное содержание страницы -->
     <main class="main-container">
-      <h1 class="visually-hidden">Фото и видео с Седоной</h1>
-      <div class="photo-hero">
-        <img class="photo-hero__image" src="img/SEDONA.svg" alt="Sedona" width="229" height="39">
+
+      <!-- Баннер -->
+      <div class="catalog-hero">
+        <img class="catalog-hero__image" src="img/hero-title2.svg" alt="Седона" width="229" height="39">
       </div>
+
+      <!-- Хедер для содержательной части -->
+      <header class="main-header">
+        <h1 class="main-header__title">Фото и видео</h1>
+        <p class="main-header__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </header>
+
+      <!-- Фотографии -->
       <section class="photos">
         <div class="photos__wrapper">
-          <header class="photos__header">
-            <h2 class="visually-hidden">Фотографии</h2>
-            <p class="photos__title">Фото и видео</p>
-            <p class="photos__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-          </header>
+          <h2 class="visually-hidden">Фотографии</h2>
           <ul class="photos__list">
             <li class="photos__item photo photos__item--special">
               <img class="photo__image" src="img/photo-1-mobile.jpg" alt="Дорога на закате" width="280" height="280">
@@ -66,7 +73,10 @@
                   Автор фото: Борис
                 </p>
                 <div class="photo__reactions likes">
-                  <button class="likes__button" type="button"><span class="likes__number">1350</span></button>
+                  <button class="likes__button" type="button">
+                    <span class="visually-hidden">Количество лайков у снимка</span>
+                    <span class="likes__number">1350</span>
+                  </button>
                 </div>
               </div>
             </li>
@@ -80,7 +90,10 @@
                   Автор фото: Сергей
                 </p>
                 <div class="photo__reactions likes">
-                  <button class="likes__button" type="button"><span class="likes__number">143</span></button>
+                  <button class="likes__button" type="button">
+                    <span class="visually-hidden">Количество лайков у снимка</span>
+                    <span class="likes__number">143</span>
+                  </button>
                 </div>
               </div>
             </li>
@@ -94,7 +107,10 @@
                   Автор фото: Петр
                 </p>
                 <div class="photo__reactions likes">
-                  <button class="likes__button" type="button"><span class="likes__number">96</span></button>
+                  <button class="likes__button" type="button">
+                    <span class="visually-hidden">Количество лайков у снимка</span>
+                    <span class="likes__number">96</span>
+                  </button>
                 </div>
               </div>
             </li>
@@ -108,26 +124,35 @@
                   Автор фото: Антон
                 </p>
                 <div class="photo__reactions likes">
-                  <button class="likes__button" type="button"><span class="likes__number">254</span></button>
+                  <button class="likes__button" type="button">
+                    <span class="visually-hidden">Количество лайков у снимка</span>
+                    <span class="likes__number">254</span>
+                  </button>
                 </div>
               </div>
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- Видео -->
       <section class="video">
         <div class="video__wrapper">
           <header class="video__header">
             <h2 class="visually-hidden">Видео</h2>
             <p class="video__title">Все еще сомневаетесь?</p>
-            <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </header>
           <video class="video__clip" src="#" controls poster="img/video-mobile.jpg" preload="none" width="280" height="177">
           </video>
-          <button class="video__button" type="button"></button>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Кнопка для включения видео</span>
+          </button>
         </div>
       </section>
     </main>
+
+    <!-- Футер -->
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__hashtag hashtag" href="#">
@@ -149,7 +174,6 @@
               <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
-
         </ul>
         <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
