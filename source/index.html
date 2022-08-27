@@ -2,23 +2,26 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="page__body">
     <!-- Хедер -->
     <header class="page-header">
-      <a class="logo">
+      <a class="logo" aria-current="page">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
       <nav class="page-nav">
-        <button class="page-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="page-nav__toggle nav-toggle nav-toggle--open button" type="button">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
         <div class="page-nav__wrapper">
           <ul class="page-nav__list">
             <li class="page-nav__item page-nav__item--current">
-              <a>
+              <a aria-current="page">
                 Главная
               </a>
             </li>
@@ -63,8 +66,8 @@
           <ol class="advantages__list">
             <li>
               <div class="advantages__extended">
-                <div class="advantages__card advantage-card advantage-card--theme1">
-                  <h3 class="advantage-card__title">
+                <div class="advantages__card advantage-card advantage-card1 advantage-card--theme1">
+                  <h3 class="advantage-card__title advantage-card__title--theme1">
                     Настоящий городок
                   </h3>
                   <p class="advantage-card__text">— №1 —</p>
@@ -73,23 +76,23 @@
                 <img class="advantages__image" src="img/photo-city.jpg" alt="Фотография гостиницы" width="320" height="260">
               </div>
               <ul class="advantage-details">
-                <li class="advantage-details__card advantage-card advantage-card--icon advantage-card--theme3 advantage-card--accomodation">
+                <li class="advantage-details__card advantage-card--icon advantage-card--theme3 advantage-card--accomodation">
                   <h4 class="advantage-card__title">Жилье</h4>
                   <p class="advantage-card__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="advantage-details__card advantage-card advantage-card--icon advantage-card--theme3 advantage-card--food">
+                <li class="advantage-details__card advantage-card--icon advantage-card--theme3 advantage-card--food">
                   <h4 class="advantage-card__title">Еда</h4>
                   <p class="advantage-card__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
                 </li>
-                <li class="advantage-details__card advantage-card advantage-card--icon advantage-card--theme3 advantage-card--souvenirs">
+                <li class="advantage-details__card advantage-card--icon advantage-card--theme3 advantage-card--souvenirs">
                   <h4 class="advantage-card__title">Сувениры</h4>
                   <p class="advantage-card__text">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </li>
             <li class="advantages__extended">
-              <div class="advantages__card advantage-card advantage-card--theme1">
-                <h3 class="advantage-card__title">
+              <div class="advantages__card advantage-card advantage-card2 advantage-card--theme1">
+                <h3 class="advantage-card__title advantage-card__title--theme1">
                   Там есть Мост дьявола
                 </h3>
                 <p class="advantage-card__text">— №2 —</p>
@@ -97,7 +100,7 @@
               </div>
               <img class="advantages__image" src="img/photo-bridge.jpg" alt="Горный перешеек" width="320" height="260">
             </li>
-            <li class="advantages__card advantage-card advantage-card--theme2">
+            <li class="advantages__card advantage-card3 advantage-card advantage-card--theme2">
               <h3 class="advantage-card__title">
                 Небольшая площадь
               </h3>
@@ -141,7 +144,7 @@
         <div class="map__wrapper">
           <h2 class="visually-hidden">Карта</h2>
           <img class="map__image" src="img/map-mobile.jpg" alt="Карта Аризоны" width="320" height="350">
-          <span class="map-marker">Седона на карте Аризоны</span>
+          <span class="map-marker visually-hidden">Седона на карте Аризоны</span>
         </div>
       </section>
     </main>
@@ -149,28 +152,28 @@
     <!-- Футер -->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__hashtag hashtag" href="#">
+        <a class="page-footer__hashtag" href="#">
           #visitsedona
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--vk button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы во Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtupe" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Ссылка на HTML-Academy</span>
             <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/></svg>
