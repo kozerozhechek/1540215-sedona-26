@@ -1,0 +1,49 @@
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__icon {
+  position: relative;
+  display: block;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+  background-color: @field-background-color;
+}
+
+.control__icon--radio {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__icon::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.control__icon--checkbox {
+  border-radius: 4px;
+}
+
+.control__input[type="checkbox"]:checked + .control__icon::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+}
+
+.control__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
