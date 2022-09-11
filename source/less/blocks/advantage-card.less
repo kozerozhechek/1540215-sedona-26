@@ -1,6 +1,17 @@
+.advantage-card {
+  box-sizing: border-box;
+  padding: 33px 19px 40px;
 
-.advantage-card:last-child {
-  padding-bottom: 26px;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 42px 32px;
+    min-height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 47px 53px;
+  }
 }
 
 .advantage-card__title {
@@ -9,6 +20,14 @@
   font-size: 18px;
   line-height: 26px;
   color: @title-color;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
+    max-width: 150 px;
+    min-height: 52px;
+  }
 }
 
 .advantage-card__text {
@@ -17,6 +36,10 @@
 
 .advantage-card__text:not(:last-child) {
   margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .advantage-card--theme1 {
@@ -37,12 +60,32 @@
 }
 
 .advantage-card--icon {
+  padding: 0;
   padding-left: 65px;
   padding-right: 18px;
   text-align: left;
   background-repeat: no-repeat;
   background-size: 40px 40px;
   background-position: 18px 0;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    text-align: inherit;
+    padding-top: 158px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 59px;
+    background-size: 76px 76px;
+    background-position: center 65px;
+  }
+}
+
+.advantage-card--icon h4 {
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .advantage-card--accomodation {

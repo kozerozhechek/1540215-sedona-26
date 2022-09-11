@@ -64,69 +64,73 @@
       <section class="review">
         <h2 class="visually-hidden">Форма для отзыва</h2>
         <form class="review__form review-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="review-form__group">
-            <!-- <legend class="review-form__title">
-              Представьтесь:
-            </legend> -->
-            <h3 class="review-form__title">
-              Представьтесь:
-            </h3>
-            <ul class="review-form__list review-form__personal-info">
-              <li class="review-form__item">
-                <label class="review-form__caption review-caption" for="personal-name">
-                  Имя*:
-                </label>
-                <input class="review-form__field" type="text" id="personal-name" name="personal-name" placeholder="Имя" required>
-              </li>
-              <li class="review-form__item">
-                <label class="review-form__caption review-caption" for="personal-surname">
-                  Фамилия*:
-                </label>
-                <input class="review-form__field" type="text" id="personal-surname" name="personal-surname" placeholder="Фамилия" required>
-              </li>
-              <li class="review-form__item">
-                <label class="review-form__caption review-caption" for="personal-patronymic">
-                  Отчество:
-                </label>
-                <input class="review-form__field" type="text" id="personal-patronymic" name="personal-patronymic" placeholder="Отчество">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review-form__group">
-            <!-- <legend class="review-form__title">
-              Контактная информация:
-            </legend> -->
-            <h3 class="review-form__title">
-              Контактная информация:
-            </h3>
-            <ul class="review-form__list review-form__personal-info">
-              <li class="review-form__item">
-                <label class="review-form__caption review-caption" for="personal-telephone">
-                  Контактный телефон*:
-                </label>
-                <div class="review-form__field-wrapper">
-                  <input class="review-form__field review-form__field--icon" type="tel" id="personal-telephone" name="personal-telephone" placeholder="Введите телефон" required>
-                  <div class="review-form__field-icon review-form__field-icon--tel"></div>
-                </div>
-              </li>
-              <li class="review-form__item">
-                <label class="review-form__caption review-caption" for="personal-email">
-                  Электронная почта*:
-                </label>
-                <div class="review-form__field-wrapper">
-                  <input class="review-form__field review-form__field--icon review-form__field--email" type="email" id="personal-email" name="personal-email" placeholder="Введите e-mail" required>
-                  <div class="review-form__field-icon review-form__field-icon--email"></div>
-                </div>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review-form__group">
+          <div class="review-form__group-wrapper">
+            <fieldset class="review-form__group">
+              <!-- <legend class="review-form__title">
+                Представьтесь:
+              </legend> -->
+              <h3 class="review-form__title">
+                Представьтесь:
+              </h3>
+              <ul class="review-form__list review-form__personal-info">
+                <li class="review-form__item">
+                  <label class="review-form__caption review-caption" for="personal-name">
+                    Имя*:
+                  </label>
+                  <input class="review-form__field" type="text" id="personal-name" name="personal-name" placeholder="Имя" required>
+                </li>
+                <li class="review-form__item">
+                  <label class="review-form__caption review-caption" for="personal-surname">
+                    Фамилия*:
+                  </label>
+                  <input class="review-form__field" type="text" id="personal-surname" name="personal-surname" placeholder="Фамилия" required>
+                </li>
+                <li class="review-form__item">
+                  <label class="review-form__caption review-caption" for="personal-patronymic">
+                    Отчество:
+                  </label>
+                  <input class="review-form__field" type="text" id="personal-patronymic" name="personal-patronymic" placeholder="Отчество">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="review-form__group">
+              <!-- <legend class="review-form__title">
+                Контактная информация:
+              </legend> -->
+              <h3 class="review-form__title">
+                Контактная информация:
+              </h3>
+              <ul class="review-form__list review-form__contact-info">
+                <li class="review-form__item">
+                  <label class="review-form__caption review-caption" for="personal-telephone">
+                    Контактный телефон*:
+                  </label>
+                  <div class="review-form__field-wrapper">
+                    <input class="review-form__field review-form__field--icon" type="tel" id="personal-telephone" name="personal-telephone" placeholder="Введите телефон" required>
+                    <div class="review-form__field-icon review-form__field-icon--tel"></div>
+                  </div>
+                </li>
+                <li class="review-form__item">
+                  <label class="review-form__caption review-caption" for="personal-email">
+                    Электронная почта*:
+                  </label>
+                  <div class="review-form__field-wrapper">
+                    <input class="review-form__field review-form__field--icon review-form__field--email" type="email" id="personal-email" name="personal-email" placeholder="Введите e-mail" required>
+                    <div class="review-form__field-icon review-form__field-icon--email"></div>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="review-form__group review-form__group--impressions">
             <!-- <legend class="review-form__title">
               Ваше общее впечатление:
             </legend> -->
-            <h3 class="review-form__title">
-              Ваше общее впечатление:
-            </h3>
+            <div class="review-form__title-wrapper">
+              <h3 class="review-form__title">
+                Ваше общее впечатление:
+              </h3>
+            </div>
             <ul class="review-form__list review-form__radio">
               <li class="review-form__item">
                 <label class="control">
@@ -151,13 +155,15 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__group">
+          <fieldset class="review-form__group review-form__group--impressions">
             <!-- <legend class="review-form__title">
               Посещенные достопримечательности:
             </legend> -->
-            <h3 class="review-form__title">
-              Посещенные достопримечательности:
-            </h3>
+            <div class="review-form__title-wrapper">
+              <h3 class="review-form__title">
+                Посещенные достопримечательности:
+              </h3>
+            </div>
             <ul class="review-form__list review-form__checkbox">
               <li class="review-form__item">
                 <label class="control">
@@ -189,13 +195,15 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__group">
+          <fieldset class="review-form__group review-form__group--impressions">
             <!-- <legend class="review-form__title">
               Опишите свои эмоции:
             </legend> -->
-            <h3 class="review-form__title">
-              Опишите свои эмоции:
-            </h3>
+            <div class="review-form__title-wrapper">
+              <h3 class="review-form__title">
+                Опишите свои эмоции:
+              </h3>
+            </div>
             <textarea class="review-form__list review-form__field review-form__field--extended" rows="4" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
           <div class="review-form__button-wrapper">
@@ -206,7 +214,6 @@
       </section>
     </main>
 
-    <!-- Футер -->
     <!-- Футер -->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -241,10 +248,10 @@
     </footer>
 
     <div class="modal-container modal-container--error">
-      <div class="modal modal--success">
+      <div class="modal modal--error">
         <h2 class="visually-hidden">Модальное окно</h2>
         <section class="modal__content">
-          <h3 class="modal__title">Что-то пошло не так!</h3>
+          <h3 class="modal__title">Что-то пошло не&nbsp;так!</h3>
           <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </section>
         <button class="modal__button modal-button button" type="button">
@@ -257,10 +264,10 @@
       <div class="modal modal--success">
         <h2 class="visually-hidden">Модальное окно</h2>
         <section class="modal__content">
-          <h3 class="modal__title">Что-то пошло не так!</h3>
-          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         </section>
-        <div class="modal__wrapper">
+        <div class="modal__button-wrapper">
           <button class="modal__button button" type="button">
             Закрыть окно
           </button>

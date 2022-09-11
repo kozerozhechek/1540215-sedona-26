@@ -1,13 +1,21 @@
 .advantage-details {
   max-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 23px;
-  margin-bottom: 52px;
-  padding: 0;
+  margin: 0 auto;
+  padding: 23px 18px 52px;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    max-width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .advantage-details__card:not(:last-child) {
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
