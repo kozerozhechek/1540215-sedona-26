@@ -4,6 +4,17 @@
 
 .page-footer__wrapper {
   padding: 38px 18px 23px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 104px;
+  }
 }
 
 .page-footer__hashtag {
@@ -15,9 +26,17 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @title-color;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__social {
   margin: 0;
   margin-bottom: 47px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
