@@ -14,8 +14,8 @@
       <a class="logo" aria-current="page">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
-      <nav class="page-nav">
-        <button class="page-nav__toggle nav-toggle nav-toggle--open button" type="button">
+      <nav class="page-nav page-nav--closed page-nav--nojs">
+        <button class="page-nav__toggle button" type="button">
           <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
         <div class="page-nav__wrapper">
@@ -50,7 +50,7 @@
     <!-- Основное содержание страницы -->
     <main class="index-container">
       <!-- Баннер -->
-      <div class="main-hero">
+      <div class="hero hero--main">
         <img class="main-hero__image" src="img/hero-title1.svg" alt="Надпись: Добро пожаловать в Седону, потому что Большой Каньон - отстой!" width="282" height="214">
       </div>
       <!-- Хедер для содержательной части -->
@@ -68,55 +68,61 @@
               <div class="advantages__extended">
                 <div class="advantages__card advantage-card advantage-card1 advantage-card--theme1">
                   <h3 class="advantage-card__title advantage-card__title--theme1">
-                    Настоящий городок
+                    Настоящий <span>городок</span>
                   </h3>
                   <p class="advantage-card__text">— №1 —</p>
-                  <p class="advantage-card__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+                  <p class="advantage-card__text">Седона не аттракцион для туристов,
+                    <span>там течёт своя жизнь</span>
+                  </p>
                 </div>
-                <img class="advantages__image" src="img/photo-city.jpg" alt="Фотография гостиницы" width="320" height="260">
+                <picture class="advantages__image-wrapper">
+                  <img class="advantages__image" src="img/photo-city.jpg" alt="Фотография гостиницы" width="320" height="260">
+                </picture>
               </div>
               <ul class="advantage-details">
-                <li class="advantage-details__card advantage-card advantage-card--theme3 advantage-card--icon  advantage-card--accomodation">
+                <li class="advantage-details__card advantage-card advantage-card--theme3  advantage-details__card--accomodation">
                   <h4 class="advantage-card__title">Жилье</h4>
                   <p class="advantage-card__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="advantage-details__card advantage-card advantage-card--icon advantage-card--theme3 advantage-card--food">
+                <li class="advantage-details__card advantage-card advantage-card--theme3 advantage-details__card--food">
                   <h4 class="advantage-card__title">Еда</h4>
                   <p class="advantage-card__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
                 </li>
-                <li class="advantage-details__card advantage-card advantage-card--icon advantage-card--theme3 advantage-card--souvenirs">
+                <li class="advantage-details__card advantage-card advantage-card--theme3 advantage-details__card--souvenirs">
                   <h4 class="advantage-card__title">Сувениры</h4>
                   <p class="advantage-card__text">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </li>
             <li class="advantages__big-item advantages__extended">
+              <picture class="advantages__image-wrapper">
+                <img class="advantages__image" src="img/photo-bridge.jpg" alt="Горный перешеек" width="320" height="260">
+              </picture>
               <div class="advantages__card advantage-card advantage-card2 advantage-card--theme1">
                 <h3 class="advantage-card__title advantage-card__title--theme1">
-                  Там есть Мост дьявола
+                  Там есть <span>Мост дьявола</span>
                 </h3>
                 <p class="advantage-card__text">— №2 —</p>
                 <p class="advantage-card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__image" src="img/photo-bridge.jpg" alt="Горный перешеек" width="320" height="260">
             </li>
             <li class="advantages__card advantage-card3 advantage-card advantage-card--theme2">
               <h3 class="advantage-card__title">
-                Небольшая площадь
+                Небольшая <span>площадь</span>
               </h3>
               <p class="advantage-card__text">— №3 —</p>
               <p class="advantage-card__text">Все интересные места находятся очень близко</p>
             </li>
             <li class="advantages__card advantage-card advantage-card--theme2">
               <h3 class="advantage-card__title">
-                Красивая дорога
+                Красивая <span>дорога</span>
               </h3>
               <p class="advantage-card__text">— №4 —</p>
               <p class="advantage-card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages__card advantage-card advantage-card--theme2">
               <h3 class="advantage-card__title">
-                Мало туристов
+                Мало <span>туристов</span>
               </h3>
               <p class="advantage-card__text">— №5 —</p>
               <p class="advantage-card__text">Большинство едет в Гранд каньон и толпится там</p>
@@ -140,12 +146,16 @@
           </a>
         </div>
       </section>
+
       <!-- Карта -->
       <section class="map">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Карта</h2>
-          <img class="map__image" src="img/map-mobile.jpg" alt="Карта Аризоны" width="320" height="350">
+
+          <!-- <iframe src="https://goo.gl/maps/5TNC8rHQLyxtgTPW6" width="320" height="350" allowfullscreen title="Седона на карте Аризоны"></iframe> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505978045!2d-111.83015800584275!3d34.85437338102982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1665470354864!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <span class="map-marker visually-hidden">Седона на карте Аризоны</span>
+          <!-- <img class="map__image" src="img/map-mobile.jpg" alt="Карта Аризоны" width="320" height="350"> -->
         </div>
       </section>
     </main>
@@ -182,5 +192,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/nav-toggle-sript.js"></script>
   </body>
 </html>

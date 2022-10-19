@@ -3,8 +3,8 @@
   padding: 33px 19px 40px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     padding: 42px 32px;
     min-height: 256px;
   }
@@ -30,8 +30,19 @@
   }
 }
 
+.advantage-card__title span {
+  display: block;
+}
+
 .advantage-card__text {
   margin: 0;
+}
+
+.advantage-card__text span {
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .advantage-card__text:not(:last-child) {
@@ -57,45 +68,29 @@
 
 .advantage-card--theme2 {
   background-color: #eeeeee;
-}
+  position: relative;
+  display: block;
+  flex-direction: column;
 
-.advantage-card--icon {
-  padding: 0;
-  padding-left: 65px;
-  padding-right: 18px;
-  text-align: left;
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  background-position: 18px 0;
-  background-color: #ffffff;
-
-  @media (min-width: @tablet-width) {
-    text-align: inherit;
-    padding-top: 158px;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-bottom: 59px;
-    background-size: 76px 76px;
-    background-position: center 65px;
+  & .advantage-card__text {
+    padding-left: 18px;
+    padding-right: 18px;
   }
-}
 
-.advantage-card--icon h4 {
-  margin-bottom: 16px;
+  &:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 40px);
+    margin-top: 24px;
+    box-sizing: border-box;
+    height: 1px;
+    background-color: #d6d6d6;
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 21px;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
   }
-}
-
-.advantage-card--accomodation {
-  background-image: url("../img/icon-house.svg");
-}
-
-.advantage-card--food {
-  background-image: url("../img/icon-burger.svg");
-}
-
-.advantage-card--souvenirs {
-  background-image: url("../img/icon-gift.svg");
 }

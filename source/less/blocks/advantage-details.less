@@ -1,7 +1,7 @@
 .advantage-details {
   max-width: 320px;
   margin: 0 auto;
-  padding: 23px 18px 52px;
+  padding: 23px 0 52px;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
@@ -11,6 +11,49 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.advantage-details__card {
+  padding: 0;
+  padding-left: 65px;
+  padding-right: 18px;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: 18px 0;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    text-align: inherit;
+    padding-top: 158px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 59px;
+    background-size: 76px 76px;
+    background-position: center 65px;
+  }
+}
+
+.advantage-details__card h4 {
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+  }
+}
+
+.advantage-details__card--accomodation {
+  background-image: url("../img/icon-house.svg");
+}
+
+.advantage-details__card--food {
+  background-image: url("../img/icon-burger.svg");
+}
+
+
+.advantage-details__card--souvenirs {
+  background-image: url("../img/icon-gift.svg");
+}
+
 
 .advantage-details__card:not(:last-child) {
   margin-bottom: 22px;

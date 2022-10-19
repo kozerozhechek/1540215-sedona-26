@@ -1,0 +1,44 @@
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: @basic-color;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-position: center bottom;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+}
+
+.hero--main {
+  padding: 90px 19px 85px;
+  background-image: url("../img/back-mobile.jpg");
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 90px;
+    background-image: url("../img/back-desktop.jpg");
+  }
+}
+
+.hero--internal {
+  padding: 52px 20px 67px;
+  background-image: url("../img/back-internal-mobile.jpg");
+  background-position: center bottom;
+
+  @media (min-width: @tablet-width) {
+    padding: 95px 20px 118px;
+    background-image: url("../img/back-desktop.jpg");
+  }
+}

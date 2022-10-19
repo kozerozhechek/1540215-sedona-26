@@ -11,16 +11,16 @@
 
     <!-- Хедер -->
     <header class="page-header">
-      <a class="logo" aria-current="page">
+      <a class="logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
-      <nav class="page-nav">
-        <button class="page-nav__toggle nav-toggle nav-toggle--open button" type="button">
+      <nav class="page-nav page-nav--closed page-nav--nojs">
+        <button class="page-nav__toggle button" type="button">
           <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
         <div class="page-nav__wrapper">
           <ul class="page-nav__list">
-            <li class="page-nav__item page-nav__item--current">
+            <li class="page-nav__item">
               <a href="index.html">
                 Главная
               </a>
@@ -32,7 +32,7 @@
             </li>
           </ul>
           <ul class="page-nav__list">
-            <li class="page-nav__item">
+            <li class="page-nav__item page-nav__item--current">
               <a aria-current="page">
                 Форма отзыва
               </a>
@@ -50,7 +50,7 @@
     <!-- Основное содержание страницы -->
     <main class="main-container">
       <!-- Баннер -->
-      <div class="internal-hero">
+      <div class="hero hero--internal">
         <img class="internal-hero__image" src="img/hero-title2.svg" alt="Sedona" width="229" height="39">
       </div>
 
@@ -66,12 +66,12 @@
         <form class="review__form review-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="review-form__group-wrapper">
             <fieldset class="review-form__group">
-              <!-- <legend class="review-form__title">
+              <legend class="review-form__title">
                 Представьтесь:
-              </legend> -->
-              <h3 class="review-form__title">
+              </legend>
+              <!-- <h3 class="review-form__title">
                 Представьтесь:
-              </h3>
+              </h3> -->
               <ul class="review-form__list review-form__personal-info">
                 <li class="review-form__item">
                   <label class="review-form__caption review-caption" for="personal-name">
@@ -102,22 +102,22 @@
               </h3>
               <ul class="review-form__list review-form__contact-info">
                 <li class="review-form__item">
-                  <label class="review-form__caption review-caption" for="personal-telephone">
-                    Контактный телефон*:
+                  <label  class="review-form__label">
+                    <span class="review-form__caption review-caption">Контактный телефон*:</span>
+                    <div class="review-form__field-wrapper">
+                      <input class="review-form__field review-form__field--icon" type="tel" id="personal-telephone" name="personal-telephone" placeholder="Введите телефон" required>
+                      <div class="review-form__field-icon review-form__field-icon--tel"></div>
+                    </div>
                   </label>
-                  <div class="review-form__field-wrapper">
-                    <input class="review-form__field review-form__field--icon" type="tel" id="personal-telephone" name="personal-telephone" placeholder="Введите телефон" required>
-                    <div class="review-form__field-icon review-form__field-icon--tel"></div>
-                  </div>
                 </li>
                 <li class="review-form__item">
-                  <label class="review-form__caption review-caption" for="personal-email">
-                    Электронная почта*:
-                  </label>
-                  <div class="review-form__field-wrapper">
-                    <input class="review-form__field review-form__field--icon review-form__field--email" type="email" id="personal-email" name="personal-email" placeholder="Введите e-mail" required>
-                    <div class="review-form__field-icon review-form__field-icon--email"></div>
-                  </div>
+                  <label class="review-form__label">
+                    <span class="review-form__caption review-caption">Электронная почта*:</span>
+                    <div class="review-form__field-wrapper">
+                      <input class="review-form__field review-form__field--icon review-form__field--email" type="email" id="personal-email" name="personal-email" placeholder="Введите e-mail" required>
+                      <div class="review-form__field-icon review-form__field-icon--email"></div>
+                    </div>
+                </label>
                 </li>
               </ul>
             </fieldset>
@@ -127,7 +127,7 @@
               Ваше общее впечатление:
             </legend> -->
             <div class="review-form__title-wrapper">
-              <h3 class="review-form__title">
+              <h3 class="review-form__title review-form__title--special">
                 Ваше общее впечатление:
               </h3>
             </div>
@@ -160,7 +160,7 @@
               Посещенные достопримечательности:
             </legend> -->
             <div class="review-form__title-wrapper">
-              <h3 class="review-form__title">
+              <h3 class="review-form__title review-form__title--special">
                 Посещенные достопримечательности:
               </h3>
             </div>
@@ -200,7 +200,7 @@
               Опишите свои эмоции:
             </legend> -->
             <div class="review-form__title-wrapper">
-              <h3 class="review-form__title">
+              <h3 class="review-form__title review-form__title--special">
                 Опишите свои эмоции:
               </h3>
             </div>
@@ -274,5 +274,7 @@
         </div>
       </div>
     </div>
+
+    <script src="js/nav-toggle-sript.js"></script>
   </body>
 </html>
