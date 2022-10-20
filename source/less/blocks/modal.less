@@ -9,13 +9,16 @@
   max-width: 400px;
   padding: 45px 42px 35px;
   box-sizing: border-box;
+  top: 116px;
 
   @media (min-width: @tablet-width) {
     padding: 53px 46px 49px;
+    top: 283px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 48px;
+    top: 162px;
   }
 }
 
@@ -28,8 +31,17 @@
 }
 
 .modal--success {
+  top: 50%;
+  transform: translateY(-50%);
+
   @media (min-width: @tablet-width) {
     max-width: 640px;
+    top: 162px;
+    transform: translateY(0);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 145px;
   }
 }
 

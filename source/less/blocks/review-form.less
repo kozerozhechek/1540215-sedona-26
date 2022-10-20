@@ -13,7 +13,7 @@
 .review-form__group {
   margin: 0;
   border: none;
-  border-top: 1px solid @divider-color;
+  border-top: 1px solid @details-color;
   box-sizing: border-box;
   padding: 24px 0 34px;
 
@@ -142,7 +142,6 @@
 }
 
 .review-form__title--special {
-
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -154,20 +153,17 @@
 
 .review-form__title--special::before,
 .review-form__title--special::after {
-
   @media (min-width: @tablet-width) {
     content: "";
-  display: block;
-  height: 1px;
-  background: @divider-color;
-  width: 19%;
+    display: block;
+    height: 1px;
+    background: @details-color;
+    width: 19%;
   }
 
   @media (min-width: @desktop-width) {
     width: 29%;
   }
-
-
 }
 
 .review-form__group--impressions:not(:last-of-type) .review-form__title {
@@ -175,45 +171,6 @@
     margin-bottom: 50px;
   }
 }
-
-
-
-// .review-form__title-wrapper {
-//   @media (min-width: @tablet-width) {
-//     overflow: hidden;
-//   }
-// }
-
-// .review-form__title-wrapper h3 {
-//   @media (min-width: @tablet-width) {
-//     position: relative;
-//     display: inline-block;
-//     width: 402px;
-//     margin-bottom: 28px;
-//   }
-// }
-
-// .review-form__title-wrapper h3::before,
-// .review-form__title-wrapper h3::after {
-//   @media (min-width: @tablet-width) {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     top: 50%;
-//     width: 2000px;
-//     height: 1px;
-//     background: @divider-color;
-//   }
-// }
-
-// .review-form__title-wrapper h3::before {
-//   right: 402px;
-// }
-
-// .review-form__title-wrapper h3::after {
-//   left: 402px;
-// }
-
 
 .review-form__caption {
   text-transform: uppercase;

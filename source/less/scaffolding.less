@@ -43,4 +43,18 @@ img {
   color: #ffffff;
   background-color: @basic-color;
   cursor: pointer;
+
+  &:hover {
+    background-color: @basic-hover-color;
+  }
+
+  &:active {
+    background-color: @basic-active-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @details-color;
+    color: #ffffff;
+  }
 }
